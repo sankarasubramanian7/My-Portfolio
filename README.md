@@ -94,20 +94,6 @@ Any modern web browser (Chrome, Firefox, Safari, etc.)
 
 Basic knowledge of HTML and CSS (optional for customization)
 
-**Steps to Install:**
-
-Clone the repository:
-
-git clone https://github.com/sankarasubramanian7/My-Portfolio.git
-
-Navigate to the project directory:
-
-cd portfolio
-
-Open index.html in your browser:
-
-You can double-click the file or open it via a local server like Live Server in VSCode.
-
 **Customization**
 
 Feel free to customize the portfolio to match your style and content:
@@ -127,3 +113,9 @@ Update the Projects section in index.html with new project entries.
 Replace Images:
 
 Add your images in the images/ folder and update the paths accordingly.
+
+### Steps to Install:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sankarasubramanian7/My-Portfolio.git
