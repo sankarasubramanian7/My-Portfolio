@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Contact Me</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/sankar.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+						
+							<li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Contact Me</h2>
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Banner Area =================-->
+
+
+<!--================Contact Area =================-->
+<!--================Contact Area =================-->
+<section class="contact_area section_gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="contact_info">
+                    <div class="info_item">
+                        <i class="lnr lnr-home"></i>
+                        <h6>TamilNadu | India</h6>
+                        <p>Tirunelveli</p>
+                    </div>
+                    <div class="info_item">
+                        <i class="lnr lnr-phone-handset"></i>
+                        <h6><a href="#">9345727473</a></h6>
+                        <p>Mon to Sat 9am to 6pm</p>
+                    </div>
+                    <div class="info_item">
+                        <i class="lnr lnr-envelope"></i>
+                        <h6><a href="#">gsankarasubramaniann@gmail.com</a></h6>
+                        <p>Send us your query anytime!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <form class="row contact_form" id="contactForm" novalidate="novalidate">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <!-- 'Send Message' button as a link -->
+                        <a href="javascript:void(0);" class="primary_btn" onclick="showSuccessNotification()">
+                            <span>Send Message</span>
+                        </a>
+                    </div>
+                </form>
+
+                <!-- Success Notification below the button on the right -->
+                <div id="success-notification" style="display: none; background-color: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px; margin-top: 10px; position: absolute; top: 100%; right: 0; width: auto; max-width: 300px;">
+                    Message Sent Successfully!
+                </div>
+
+                <!-- Alert-like Notification for missing fields -->
+                <div id="error-notification" style="display: none; background-color: #FF5722; color: white; padding: 10px 20px; border-radius: 5px; margin-top: 10px; position: absolute; top: 100%; right: 0; width: auto; max-width: 300px;">
+                    Please fill in all the fields!
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================Contact Area =================-->
+
+<script type="text/javascript">
+    function showSuccessNotification() {
+        // Get form values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+
+        // Check if all required fields are filled
+        if (name === "" || email === "" || subject === "" || message === "") {
+            // Show the error notification if any fields are empty
+            var errorNotification = document.getElementById("error-notification");
+            errorNotification.style.display = "block";
+
+            // Hide the error notification after 3 seconds
+            setTimeout(function() {
+                errorNotification.style.display = "none";
+            }, 3000);
+            return; // Exit the function if fields are empty
+        }
+
+        // Show the success notification if all fields are filled
+        var notification = document.getElementById("success-notification");
+        notification.style.display = "block";
+
+        // Hide the success notification after 2 seconds
+        setTimeout(function() {
+            notification.style.display = "none";
+        }, 2000);
+    }
+</script>
+
+
+
+<!--================Footer Area =================-->
+<!--================ Start Footer Area =================-->
+<footer class="footer_area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="footer_top flex-column">
+                    <div class="footer_logo">
+                        <a href="#">
+                            <img src="img\sankar.png" alt="">
+                        </a>
+                        <h4>Follow Me</h4>
+                    </div>
+                    <div class="footer_social">
+                        <a href="https://www.linkedin.com/in/sankara-subramanian7" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/sankarasubramanian7" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://wa.me/919345727473" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/sankarr_7" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-section" style="display: flex; justify-content: center; align-items: center; text-align: center; padding: 20px 0; font-size: 16px; color: #fff; background-color: #6157bb; border-top: 1px solid #444; width: 100%; letter-spacing: 1px;">
+        <p style="margin: 0; font-family: 'Rubik', sans-serif; font-weight: 500; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+            &copy; 2025 <span>Sankara Subramanian</span>.All Rights Reserved.
+          </p>
+          
+    </div>
+</footer>
+
+
+<!--================ End Footer Area =================-->
+<!--================End Footer Area =================-->
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope-min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/mail-script.js"></script>
+<!--gmaps Js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+<script src="js/gmaps.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>
