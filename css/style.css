@@ -3350,6 +3350,13 @@ h6 {
     border-top: 1px solid #444 !important; /* Ensures no extra border spacing */
   }
 
+  @media (max-width: 600px) {
+    .copyright-section p {
+        font-size: 14px; /* Adjust the size as needed */
+        letter-spacing: 0.5px; /* Optional: reduce letter spacing for better fit */
+    }
+}
+
   /* Remove extra space below the footer */
   .footer_area {
     padding-bottom: 0 !important; /* Ensure no extra bottom padding */
